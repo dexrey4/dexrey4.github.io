@@ -28,15 +28,16 @@ function draw() {
     text("YOU WIN",100,100);
   }
   else{
-    textSize(32);
-    fill(255);
-    text(score,10,40)
+    
   
     for (var i = 0; i < balls.length; i++) {
         balls[i].update();
         balls[i].display();
         balls[i].bounce();
     }
+    textSize(32);
+    fill(255);
+    text(score,30,30)
   }
 }
 
