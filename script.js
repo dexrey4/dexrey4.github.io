@@ -3,7 +3,7 @@ var score = 0
 var notes = ['C','D','E','F','G','A','B','C2']; 
 var startballs = 200
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(401, 400);
   Cp = loadSound('/sounds/cp.wav');
   Dp = loadSound('/sounds/dp.wav');
   Ep = loadSound('/sounds/ep.wav');
