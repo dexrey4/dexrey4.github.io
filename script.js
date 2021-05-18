@@ -1,9 +1,9 @@
 var balls = [];
 var score = 0
 var notes = ['C','D','E','F','G','A','B','C2']; 
-var startballs = 100
+var startballs = 500
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1000, 600);
   Cp = loadSound('/sounds/cp.wav');
   Dp = loadSound('/sounds/dp.wav');
   Ep = loadSound('/sounds/ep.wav');
