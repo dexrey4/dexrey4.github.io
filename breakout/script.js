@@ -28,3 +28,4 @@ function dec(num) {
   locks[num-1].numb = locknum
   lock.innerHTML = locknum
 }
+
