@@ -8,7 +8,7 @@
 a {
   text-decoration: none;
 
-  padding: 8px 16px;
+  
 }
 
 a.button:hover {
@@ -16,10 +16,81 @@ a.button:hover {
   color: black;
 }
 
-.button{
+.button1p{
+  position: absolute;
+  left: 0px;
+  top: 200px;
+  padding: 8px 16px;
+  
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button1n{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 8px 14px;
+
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2p{
   position: absolute;
   left: 100px;
-  top: 150px;
+  top: 200px;
+  padding: 8px 16px;
+
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2n{
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  padding: 8px 14px;
+
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button3p{
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  padding: 8px 16px;
+
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button3n{
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  padding: 8px 14px;
+
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button4p{
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  padding: 8px 16px;
+
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button4n{
+  position: absolute;
+  left: 300px;
+  top: 0px;
+  padding: 8px 14px;
 
   background-color: #04AA6D;
   color: white;
@@ -27,29 +98,31 @@ a.button:hover {
 
 .num1{
   position: absolute;
-  top:0;
-  left:0;
+  top:100px;
+  left:0px;
+  padding: 8px 19px;
 }
 
 .num2{
   position: absolute;
-  top:0;
-  left:100;
+  top:100px;
+  left:100px;
+  padding: 8px 19px;
 }
 
 .num3{
   position: absolute;
-  top:0;
-  left:200;
+  top:100px;
+  left:200px;
+  padding: 8px 19px;
 }
 
 .num4{
   position: absolute;
-  top:0;
-  left:300;
+  top:100px;
+  left:300px;
+  padding: 8px 19px;
 }
-
-
 
 
 </style>
@@ -57,22 +130,21 @@ a.button:hover {
 <body>
 
 
-<a id="b1p" onclick='dec(1)' class="button">-1</a>
-<a id="b1n" onclick='inc(1)' class="button">+1</a>
+<a id="b1p" onclick='dec(1)' class="button1p">-1</a>
+<a id="b1n" onclick='inc(1)' class="button1n">+1</a>
 <a id = "b1" class="num1">0</a>
 
-<a id="b2p" onclick='dec(2)' class="button">-1</a>
-<a id="b2n" onclick='inc(2)' class="button">+1</a>
+<a id="b2p" onclick='dec(2)' class="button2p">-1</a>
+<a id="b2n" onclick='inc(2)' class="button2n">+1</a>
 <a id = "b2" class="num2">0</a>
 
-<a id="b3p" onclick='dec(3)' class="button">-1</a>
-<a id="b3n" onclick='inc(3)' class="button">+1</a>
+<a id="b3p" onclick='dec(3)' class="button3p">-1</a>
+<a id="b3n" onclick='inc(3)' class="button3n">+1</a>
 <a id = "b3" class="num3">0</a>
 
-<a id="b4p" onclick='dec(4)' class="button">-1</a>
-<a id="b4n" onclick='inc(4)' class="button">+1</a>
+<a id="b4p" onclick='dec(4)' class="button4p">-1</a>
+<a id="b4n" onclick='inc(4)' class="button4n">+1</a>
 <a id = "b4" class="num4">0</a>
-
 
 </body>
 </html> 
