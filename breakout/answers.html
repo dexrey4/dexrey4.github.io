@@ -146,5 +146,118 @@ a.button:hover {
 <a id="b4n" onclick='inc(4)' class="button4n">+1</a>
 <a id = "b4" STYLE="font-size:18.0pt" class="num4">0</a>
 
+
+
+
+
+
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 200px;
+  top: 200px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+<script>
+  let level = "None"
+</script>
+<script>
+	function change(lev) {
+    
+    document.getElementById("button").innerHTML = "Level ".concat(lev);
+    level = lev
+
+    }
+</script>
+
+<style>
+  .b {
+  text-decoration: none;
+  position: absolute;
+  left: 70px;
+  top: 200px;
+}
+</style>
+
+<h2 class="b">Answer For: </h2>
+
+<div class="dropdown">
+  <button id="button" onclick="myFunction()" class="dropbtn">Select Level</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a>
+    	<span onclick="change(1)">Level 1</span>
+    </a>
+    <a>
+    	<span onclick="change(2)">Level 2</span>
+    </a>
+    <a>
+    	<span onclick="change(3)">Level 3</span>
+    </a>
+  </div>
+</div>
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
 </body>
 </html> 
