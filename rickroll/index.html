@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+  <script>
+    $(document).ready(function(){
+		$("h1").fitText();
+		
+		setTimeout(function(){
+			window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+		}, 100);
+    });
+
+
+    (function( $ ){
+		$.fn.fitText = function( kompressor, options ) {
+
+		    var settings = {
+	        'minFontSize' : Number.NEGATIVE_INFINITY,
+	        'maxFontSize' : Number.POSITIVE_INFINITY
+	      };
+
+				return this.each(function(){
+					var $this = $(this);              // store the object
+					var compressor = kompressor || 1; // set the compressor
+
+	        if ( options ) {
+	          $.extend( settings, options );
+	        }
+
+					var resizer = function () {
+						$this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+					};
+
+					resizer();
+	      	$(window).resize(resizer);
+
+				});
+
+		};
+
+	})( jQuery );
+
+
+  </script>
+  <style>
+  	html, body {
+  		width: 100%;
+  		height: 100%;
+  		background-color: #fff;
+  		border: 0px;
+  		padding: 0px;
+  	}
+
+  	#inner {
+	  	width: 100%;
+	  	height: 100%;
+	  	display: table;
+  	}
+
+  	h1 {
+  		display: table-cell;
+  		vertical-align: middle;
+  		font-family: Helvetica, Arial, sans-serif;
+  		font-size: 50px;
+  		text-align: center;
+  		height: 50px;
+  	}
+
+  	#footer { bottom: 5px; position: absolute; color: #999; font-family: Helvetica, Arial, sans-serif; font-size: 11px;}
+  	#social { bottom: 5px; right: 5px; position: absolute; }
+  	a { color: #999; }
+
+
+  </style>
+  <title>Securly Redirecting You To A Rickroll!</title>
+
+</head>
+<body>
+	
+	<div id="inner">
+	<h1>Securly redirecting you to a rickroll!</h1>
+	</div>
+
+
+</body>
+</html>
