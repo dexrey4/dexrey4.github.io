@@ -1,9 +1,9 @@
 var balls = [];
+var startballs = 100
 var score = 0
 var notes = ['C','D','E','F','G','A','B','C2']; 
-var startballs = 200
 function setup() {
-  createCanvas(401, 400);
+  createCanvas(300, 300);
   Cp = loadSound('/sounds/cp.wav');
   Dp = loadSound('/sounds/dp.wav');
   Ep = loadSound('/sounds/ep.wav');
@@ -37,7 +37,7 @@ function draw() {
     }
     textSize(32);
     fill(255);
-    text(score,30,30)
+    text(score,40,30)
   }
 }
 
@@ -120,3 +120,5 @@ function playNote(name){
     C2p.play();
   }
 }
+
+
